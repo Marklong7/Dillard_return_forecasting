@@ -1,0 +1,89 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+
+# Set working directory
+
+setwd("~/Desktop/Northwestern/Classes/Fall 23/Everything Starts with Data/Project/Dillards POS")
+
+```
+
+
+
+```{r}
+
+library(lubridate) # time operations
+
+library(reshape2) # reshaping data (melt, dcast, recast)
+
+library(dplyr)
+
+library(data.table)
+
+library(ggplot2)
+
+
+```
+
+
+```{r}
+
+# reading the csv files
+
+deptinfo = read.csv("deptinfo.csv", header = F, stringsAsFactors = F)
+
+skstinfo = read.csv("skstinfo.csv", header = F, stringsAsFactors = F)
+
+skuinfo = read.csv("skuinfo.csv", header = F, stringsAsFactors = F)
+
+strinfo = read.csv("strinfo.csv", header = F, stringsAsFactors = F)
+
+# trnsact = read.csv("trnsact.csv", header = F, stringsAsFactors = F)
+
+
+```
+
+
+
+```{r}
+
+# 11 GB csv
+
+trnsact = fread("trnsact.csv", header = F)
+
+str(trnsact)
+
+dim(trnsact)
+
+names(trnsact)
+
+```
+
+
+```{r}
+
+?fread()
+
+```
+
+
+
+```{r}
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
