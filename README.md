@@ -7,6 +7,7 @@
 - Set up Github repo
 - Connected to the NU resource servers
 - Uploaded datasets into database schema
+- Figured out SQL connection in Python
 - Explored datasets in Python and R
 
   deptinfo: 60 rows, 2 columns
@@ -20,8 +21,7 @@
 
   strinfo: 453 rows, 4 columns
 
+
 Next week:
-- Finish uploading datasets into database schema
-- Figure out SQL connection in Python
 - Come up with business questions
 - Continue data exploration and data cleaning
