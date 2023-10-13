@@ -2,7 +2,7 @@
 
 ## Weekly updates
 
-### Oct 13
+### Week1 -> Oct.13
 
 - Set up Github repo
 - Connected to the NU resource servers
@@ -22,6 +22,17 @@
   strinfo: 453 rows, 4 columns
 
 
-Next week:
+### Week2: -> Oct.20
 - Come up with business questions
 - Continue data exploration and data cleaning
+
+- Jialong (Mark):  
+**Explore Databricks**  
+
+As a software-as-a-service (SaaS) platform, Databrick offers cost-effective and convenient data science solutions, rapidly becoming one of the leading cloud-based data warehousing platforms. Compared to Snowflake, Databrick seamlessly integrates with Apache Spark for large-scale data processing and provides well-around support for entire machine learning lifecycle [1]. Given that we have a large dataset, and machine learning methods are required to include in our project, Databrick might be an ideal tool for us to achieve our objectives.  
+
+**Reference**  
+[1] [Why use Databricks for machine learning and deep learning?](https://docs.databricks.com/en/machine-learning/index.html)
+
+
+
