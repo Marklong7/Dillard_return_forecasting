@@ -26,7 +26,7 @@
 - Come up with business questions
 - Continue data exploration and data cleaning
 
-- Jialong (Mark):  
+Jialong (Mark):  
 **Explore Databricks**  
 
 As a software-as-a-service (SaaS) platform, Databrick offers cost-effective and convenient data science solutions, rapidly becoming one of the leading cloud-based data warehousing platforms. Compared to Snowflake, Databrick seamlessly integrates with Apache Spark for large-scale data processing and provides well-around support for entire machine learning lifecycle [1]. Given that we have a large dataset, and machine learning methods are required to include in our project, Databrick might be an ideal tool for us to achieve our objectives.  
