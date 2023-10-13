@@ -2,6 +2,12 @@
 
 ## Weekly updates
 
+### Team members:
+* Muhammet Ali Büyüknacar
+* Zhiwei Gu
+* Jialong (Mark) Li
+* Siyan Li
+
 ### Week1 -> Oct.13
 
 - Set up Github repo
