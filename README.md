@@ -31,6 +31,7 @@
 ### Week2: -> Oct.20
 - Come up with business questions
 - Continue data exploration and data cleaning
+- Come up with ways to incorporate external data to enrich the dataset
 
 Jialong (Mark):  
 **Explore Databricks**  
