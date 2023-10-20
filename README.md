@@ -31,8 +31,8 @@
 ### Week2: -> Oct.20
 - Figured out the correct sequence of columns in the csv files and successfully set primary keys and correct data type for all SQL tables. Maked sure that there are no duplicated primary keys.
 - Dropped all unknown columns that do not appear on the schema from all SQL tables.
-- Brainstormed on business and further analysis questions
-- Come up with ways to incorporate external data to enrich the dataset: state population data, weather, holiday, weekend
+- Brainstormed on business and further analysis questions, can be seen on Analysis and Business Questions.Rmd
+- Come up with ways to incorporate external data to enrich the dataset: state population data, weather, holiday, weekend. Can be seen on External Data and Domain Info.Rmd
 - Imported states.csv to the database to access the region and division of a state
 - Continued data exploration and data cleaning
 
