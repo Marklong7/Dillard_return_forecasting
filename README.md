@@ -29,7 +29,8 @@
 
 
 ### Week2: -> Oct.20
-
+- Figured out the correct sequence of columns in the csv files and successfully set primary keys and correct data type for all SQL tables. Maked sure that there are no duplicated primary keys.
+- Dropped all unknown columns that do not appear on the schema from all SQL tables.
 - Brainstorm on business question
 - Come up with ways to incorporate external data to enrich the dataset: state population data, weather, holiday, weekend
 - Continue data exploration and data cleaning
