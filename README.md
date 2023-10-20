@@ -29,9 +29,20 @@
 
 
 ### Week2: -> Oct.20
-- Come up with business questions
+
+- Brainstorm on business question
+- Come up with ways to incorporate external data to enrich the dataset: state population data, weather, holiday, weekend
 - Continue data exploration and data cleaning
-- Come up with ways to incorporate external data to enrich the dataset
+
+  dept-sku: merge dept with sku dataset, perform exploration on each column. We generated bar plots to visualize the distribution of the number of rows within each DEPT, STYLE, COLOR, SIZE, VENDOR, and BRAND. Most of these bar plots skew to the right, with a majority of relatively low values with a few exceptionally high values. COLOR and SIZE column have many similar values, so they require further grouping if needed in the analysis.
+
+  skstinfo: created histogram between number of SKU in each store, the distribution is relatively normal, the mean is 109888.36 and the median is 114042.00
+
+  strinfo: merge with outside dataset on state region and division, find number of stores in each state, region, division. Most stores are in the South region.
+
+  trnsact: sample 1/1000 from original dataset, column 9 and 10 are exactly the same, column 13 is binary without clear meaning, so drop column 10 and 13. Rename remaining columns, the order from the data schema is incorrect. Plot the relationship between ORIGPRICE and AMT, and the correlation is 0.80320634. In over 50% of cases, ORIPRICE > AMT, so calculate discount from AMT / ORIGPRICE. A minority of rows have AMT > ORIPRICE which requires further investigation. 
+
+  
 
 Jialong (Mark):  
 **Explore Databricks**  
@@ -42,4 +53,8 @@ As a software-as-a-service (SaaS) platform, Databrick offers cost-effective and 
 [1] [Why use Databricks for machine learning and deep learning?](https://docs.databricks.com/en/machine-learning/index.html)
 
 
+### Week3: -> Oct.27
+
+- Narrow down business question
+- Continue EDA on trnsact
 
