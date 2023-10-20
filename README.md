@@ -44,17 +44,6 @@
 
   trnsact: sample 1/1000 from original dataset, column 9 and 10 are exactly the same, column 13 is binary without clear meaning, so drop column 10 and 13. Rename remaining columns, the order from the data schema is incorrect. Plot the relationship between ORIGPRICE and AMT, and the correlation is 0.80320634. In over 50% of cases, ORIPRICE > AMT, so calculate discount from AMT / ORIGPRICE. A minority of rows have AMT > ORIPRICE which requires further investigation. 
 
-  
-
-Jialong (Mark):  
-**Explore Databricks**  
-
-As a software-as-a-service (SaaS) platform, Databrick offers cost-effective and convenient data science solutions, rapidly becoming one of the leading cloud-based data warehousing platforms. Compared to Snowflake, Databrick seamlessly integrates with Apache Spark for large-scale data processing and provides well-around support for entire machine learning lifecycle [1]. Given that we have a large dataset, and machine learning methods are required to include in our project, Databrick might be an ideal tool for us to achieve our objectives.  
-
-**Reference**  
-[1] [Why use Databricks for machine learning and deep learning?](https://docs.databricks.com/en/machine-learning/index.html)
-
-
 ### Week3: -> Oct.27
 
 - Narrow down business question
