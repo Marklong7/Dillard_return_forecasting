@@ -78,8 +78,8 @@ SampledDataset = function(dataset, sample_size = 100, file_path, seed = 400) {
 # Define the connection parameters
 db_connection <- dbConnect(
   PostgreSQL(),
-  user = "iyq5197",
-  password = "UIUC_NU_ljl516777",
+  user = "jialong7",
+  password = "password",
   host = "pg.analytics.northwestern.edu",
   port = 5432,
   dbname = "everything2023"
