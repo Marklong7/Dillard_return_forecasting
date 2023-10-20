@@ -35,6 +35,7 @@
 - Come up with ways to incorporate external data to enrich the dataset: state population data, weather, holiday, weekend. Can be seen on External Data and Domain Info.Rmd
 - Imported states.csv to the database to access the region and division of a state
 - Continued data exploration and data cleaning
+- Uploaded a "DatasetGenerator" R file, to write out after-cleanning or after-sampling dataset.
 
   dept-sku: merge dept with sku dataset, perform exploration on each column. We generated bar plots to visualize the distribution of the number of rows within each DEPT, STYLE, COLOR, SIZE, VENDOR, and BRAND. Most of these bar plots skew to the right, with a majority of relatively low values with a few exceptionally high values. COLOR and SIZE column have many similar values, so they require further grouping if needed in the analysis.
 
