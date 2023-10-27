@@ -47,6 +47,40 @@
 
 ### Week3: -> Oct.27
 
-- Narrow down business question
-- Continue EDA on trnsact
+- Proposed a new business question that will be consulted to the Professor and the TA
+
+**Classifying the transactions with high chance of return**
+
+The reason of a refund for a product can depend on many reasons such as a defected product supplied by the vendor, the time/season of the purchase, change in the price point after the sale, products that it was bought together with external economic factors or any other product specification. This would allow the firm to have a better understanding of the returns with a help of an explainable model and the inventory management can be managed according to this. The classification will be based on whether the product will be returned or not.
+
+- Brainstormed about possible features and transformations
+
+Mapping colors into higher groups
+
+ProductID / Vendor / Brand / Department
+
+Discount Flag / Price Difference
+
+Sale Date / Holiday&Weekend Flag
+
+Store Number / City Location / ZIP Code
+
+Date Difference (RefundDate - SaleDate)
+
+Dependent Variable: Return Flag (0/1)
+
+Grouping Sale and Refund data and transforming it in a way that it could be fed to a classification model
+
+
+### Week4: -> Nov.03
+
+- Discussing the business problem with the professor and the TA
+- Catch up on the feature transformations that are delegated among the group
+- Explore other features that could be useful for the model and feature importance
+
+
+
+
+
+ 
 
