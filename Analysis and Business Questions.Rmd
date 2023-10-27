@@ -10,6 +10,8 @@ date: "2023-10-20"
 
 -   Which brands have the most refunds ?
 
+-   Is there a difference on rate of refunds on a product based on vendors ?
+
 -   Which state generates the most revenue? And which state for revenue per customer?
 
 -   Does each region / state have different preferences on product?
