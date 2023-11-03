@@ -85,6 +85,7 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 
 - Continue to work on our current business problem
 - Cousult it with professor and TA
+- Conduct literature review to explore method of useful
 
 
 
