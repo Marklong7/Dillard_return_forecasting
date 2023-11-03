@@ -80,6 +80,7 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Look for ways to find out pairs of Sale and Return of a single transaction-possibly by a same ID such as transactionID
 - Did EDAs for features that we want to use to find out whether a transaction would be returned
 - Discussed about the possible benefits of solving our proposed business problems
+- Cleaned the color names on SKUINFO table and did an LLM demo to map the specific colors to higher groups on "Color Grouping.ipynb" file.
 
 ### Week5: -> Nov.10
 
