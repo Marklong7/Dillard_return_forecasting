@@ -77,6 +77,14 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Discussing the business problem with the professor and the TA
 - Catch up on the feature transformations that are delegated among the group
 - Explore other features that could be useful for the model and feature importance
+- Look for ways to find out pairs of Sale and Return of a single transaction-possibly by a same ID such as transactionID
+- Did EDAs for features that we want to use to find out whether a transaction would be returned
+- Discussed about the possible benefits of solving our proposed business problems
+
+### Week5: -> Nov.10
+
+- Continue to work on our current business problem
+- Cousult it with professor and TA
 
 
 
