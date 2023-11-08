@@ -129,8 +129,10 @@ LIMIT 100
 
 
 
-
-
+/* 
+Is there a refund period such as 1 months that should be added as a filter in the WHERE statement ?
+There are Refund matches that are months later than the purchase.
+*/
 
 
 
