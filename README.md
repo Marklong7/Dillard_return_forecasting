@@ -85,12 +85,16 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 
 ### Week5: -> Nov.10
 
+- Continue to work on our current business problem, cousult with professor and TA
+- Cleaned color names, group colors into 13 big categories
+- Compared weekday vs weekend_flag vs holiday_flag and state vs region, select more appropriate features for modeling
+
+
+### Week6: -> Nov.17
+
 - Continue to work on our current business problem
-- Cousult it with professor and TA
 - Conduct literature review to explore method of useful
-
-
-
+- Consider grouping other features such as size, department for modeling
 
 
  
