@@ -89,6 +89,7 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Cleaned color names, group colors into 13 big categories
 - Compared weekday vs weekend_flag vs holiday_flag and state vs region, select more appropriate features for modeling
 - Managed to work out the sale-and-return pairs based on non-zero "InterID", and create a full table of all transactions with non-zero "InterID" joining with all other tables for future use.
+- Constructed a query to match refunds and purchases
 
 
 ### Week6: -> Nov.17
