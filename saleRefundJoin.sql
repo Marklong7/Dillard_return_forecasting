@@ -142,37 +142,37 @@ There are Refund matches that are months later than the purchase.
 WITH RankedPurchases AS (
     SELECT
         *,
-        ROW_NUMBER() OVER (PARTITION BY “SKU”, “INTERID” ORDER BY “SEQ”) AS PurchaseRowNumber
-    FROM group_6.“FULL”
-	WHERE group_6.“FULL”.“STYPE” = ‘P’
+        ROW_NUMBER() OVER (PARTITION BY "SKU", "INTERID" ORDER BY "SEQ") AS PurchaseRowNumber
+    FROM group_6."FULL"
+	WHERE group_6."FULL"."STYPE" = 'P'
 ),
 RankedReturns AS (
     SELECT
         *,
-        ROW_NUMBER() OVER (PARTITION BY “SKU”, “INTERID” ORDER BY “SEQ”) AS ReturnRowNumber
-    FROM group_6.“FULL”
-	WHERE group_6.“FULL”.“STYPE” = ‘R’
+        ROW_NUMBER() OVER (PARTITION BY "SKU", "INTERID" ORDER BY "SEQ") AS ReturnRowNumber
+    FROM group_6."FULL"
+	WHERE group_6."FULL"."STYPE" = 'R'
 )
 (SELECT S.*
 FROM RankedPurchases S
 LEFT JOIN RankedReturns R
-ON S.“INTERID” = R.“INTERID”
-AND S.“SKU” = R.“SKU”
-AND R.“SALEDATE” > S.“SALEDATE”
-AND R.“SALEDATE” - S.“SALEDATE” <= 30
+ON S."INTERID" = R."INTERID"
+AND S."SKU" = R."SKU"
+AND R."SALEDATE" > S."SALEDATE"
+AND R."SALEDATE" - S."SALEDATE" <= 30
 AND S.PurchaseRowNumber = R.ReturnRowNumber
-WHERE R.“SKU” IS NULL
+WHERE R."SKU" IS NULL
 LIMIT 20)
 UNION
 (SELECT R.*
 FROM RankedPurchases S
 LEFT JOIN RankedReturns R
-ON S.“INTERID” = R.“INTERID”
-AND S.“SKU” = R.“SKU”
-AND R.“SALEDATE” > S.“SALEDATE”
-AND R.“SALEDATE” - S.“SALEDATE” <= 30
+ON S."INTERID" = R."INTERID"
+AND S."SKU" = R."SKU"
+AND R."SALEDATE" > S."SALEDATE"
+AND R."SALEDATE" - S."SALEDATE" <= 30
 AND S.PurchaseRowNumber = R.ReturnRowNumber
-WHERE R.“SKU” IS NOT NULL
+WHERE R."SKU" IS NOT NULL
 LIMIT 20)
 
 
@@ -184,26 +184,6 @@ LIMIT 20)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-LIMIT 10
 
 
 
