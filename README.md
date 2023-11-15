@@ -98,7 +98,7 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Conduct literature review to explore method of useful
 - Consider grouping other features such as size, department for modeling
 
-Business Assumpation:
-Revenue = AMT - COST
+Business Assumpation:  
+Revenue = AMT - COST  
 If AMT < ORGPRICE, the product is on sale (discount).
 
