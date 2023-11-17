@@ -92,7 +92,7 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Constructed a query to match refunds and purchases
 
 
-### Week6: -> Nov.17
+### Week6: -> Nov.17 (Remarkable Blueprint)
 
 - Continue to work on our current business problem
 - Conduct literature review to explore method of useful
@@ -102,3 +102,9 @@ Business Assumpation:
 Revenue = AMT - COST  
 If AMT < ORGPRICE, the product is on sale (discount).
 
+## Week7: -> Nov.24th (Great Journey is about to Begin)
+- Grouping color and size into smaller and more cohesive groups.
+- Joining economic-related variables including GDP, median income, and poverty rate into the full dataset (test set.csv).
+- Removing duplicated records from the full dataset.
+- Discuss 2 alternatives for handling the zip code duplication problem (sometimes 1 zipcode refers to multiple counties) 
+- Decided what models to use - random forest, xgboost, logistic, ...
