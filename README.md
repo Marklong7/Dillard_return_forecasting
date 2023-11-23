@@ -91,20 +91,29 @@ Grouping Sale and Refund data and transforming it in a way that it could be fed 
 - Managed to work out the sale-and-return pairs based on non-zero "InterID", and create a full table of all transactions with non-zero "InterID" joining with all other tables for future use.
 - Constructed a query to match refunds and purchases
 
-
 ### Week6: -> Nov.17 (Remarkable Blueprint)
 
-- Continue to work on our current business problem
-- Conduct literature review to explore method of useful
-- Consider grouping other features such as size, department for modeling
+- Continued to work on our current business problem
+- Conducted literature review to explore method of useful
+- Considered grouping other features such as size, department for modeling
 
 Business Assumpation:  
 Revenue = AMT - COST  
 If AMT < ORGPRICE, the product is on sale (discount).
 
-## Week7: -> Nov.24th (Great Journey is about to Begin)
-- Grouping color and size into smaller and more cohesive groups.
-- Joining economic-related variables including GDP, median income, and poverty rate into the full dataset (test set.csv).
-- Removing duplicated records from the full dataset.
-- Discuss 2 alternatives for handling the zip code duplication problem (sometimes 1 zipcode refers to multiple counties) 
-- Decided what models to use - random forest, xgboost, logistic, ...
+## Week7: -> Nov.24 (Great Journey is about to Begin)
+
+- Grouped color and size into smaller and more cohesive groups.
+- Discussed 2 alternatives for handling the zip code duplication problem (sometimes 1 zipcode refers to multiple counties), decided on aggregation method.
+- Joined economic-related variables including GDP, median income, and poverty rate into the full dataset (test set.csv) based on zipcode, applied clustering to separate countries into two major groups.
+- Removed duplicated records from the full dataset, rows without cost and retail.
+- Splited the data into train set and test set, applied SMOTE on train set to balance majority and minority class.
+- Trained random forest, xgboost, logistic, SVM, used VIF to select features, tested on test set.
+- Started ROI analysis
+
+### Week8: -> Dec.1 
+
+- Continue to improve model performance
+- Start putting everything together and writing report
+- Continue ROI analysis
+
