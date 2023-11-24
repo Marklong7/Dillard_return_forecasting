@@ -115,5 +115,5 @@ If AMT < ORGPRICE, the product is on sale (discount).
 
 - Continue to improve model performance
 - Start putting everything together and writing report
-- Continue ROI analysis
+- Gathered information regarding salary costs and cloud computing costs. Prepared an excel sheet with formulas to calculate and analyze return on investment (ROI).
 
