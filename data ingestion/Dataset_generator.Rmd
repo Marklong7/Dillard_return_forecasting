@@ -1,0 +1,100 @@
+---
+title: "Dataset Generator"
+output: html_document
+date: "2023-10-20"
+---
+# After-cleanning Dataset generator
+Description:
+This is a Rmd for dataset generation, which will write out cleanned dataset or sampled dataset as per our's analysis need.
+
+This files is based on the insight we derived from the EDA file, the work flow is: EDA -> Data Cleanning -> Data Analysis.
+
+## Download Necessary Packages
+```{r setup, include=FALSE}
+# List of packages to install
+packages_to_install <- c("tidyverse", "data.table", "ggplot2", "RPostgreSQL")
+
+# Loop through the list of packages and install them if not already installed
+for (package in packages_to_install) {
+  if (!require(package, character.only = TRUE)) {
+    install.packages(package)
+  }
+}
+```
+
+## Improt necessary packages
+```{r, include = False}
+library(data.table)
+library(tidyverse)
+library(ggplot2)
+# link to the data base
+library(RPostgreSQL)
+```
+
+
+## Read datasets, 4 smaller dataset
+```{r}
+df_depinfo = fread("deptinfo.csv")
+df_sksinfo = fread("skstinfo.csv")
+df_skuinfo = fread("skuinfo.csv")
+df_strinfo = fread("strinfo.csv")
+```
+
+Note there 's a column of NULL, remove it
+```{r}
+df_skuinfo_2 = df_skuinfo |>
+  select(-V11)
+```
+
+### Consider remove rows:
+```{r}
+# Remove redundant/breaking/missing rows
+# TBD
+```
+
+
+### The sampling function:
+```{r}
+SampledDataset = function(dataset, sample_size = 100, file_path, seed = 400) {
+  if (!is.null(seed)) {
+    set.seed(seed)  # Set the seed if provided
+  }
+  # Randomly sample rows
+  sampled_data <- data %>% sample_n(sample_size)
+  
+  # Write the sampled data to a CSV file
+  write.csv(sampled_data, file = file_path, row.names = FALSE)
+  
+  return(file_path)
+}
+
+# Check the file path where the CSV file was saved:
+# cat("CSV file saved at:", file_path, "\n")
+```
+
+## Read trnsact.txt, the largest dataset
+### Use SQL for Efficiency Query
+```{r}
+# Define the connection parameters
+db_connection <- dbConnect(
+  PostgreSQL(),
+  user = "jialong7",
+  password = "password",
+  host = "pg.analytics.northwestern.edu",
+  port = 5432,
+  dbname = "everything2023"
+)
+```
+
+```{r}
+# column 9 and 10 are exactly the same, column 13 is binary without clear meaning, so drop column 10 and 13.
+# while right now I don't know why col 13 is binary, so just stop doing this.
+query <- "SELECT * FROM group_6.\"TRNSACT\""
+
+# Use dbGetQuery to fetch the result
+result <- dbGetQuery(db_connection, query)
+
+# Print the result
+cat("OUTPUT: ", result$count, "\n")
+```
+

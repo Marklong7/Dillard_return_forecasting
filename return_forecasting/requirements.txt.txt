@@ -1,0 +1,9 @@
+# Import necessary libraries
+import pkg_resources
+
+# Get a list of installed packages and their versions
+installed_packages = pkg_resources.working_set
+
+# Iterate through the packages and print their names and versions
+for package in installed_packages:
+    print(f"{package.project_name}=={package.version}")

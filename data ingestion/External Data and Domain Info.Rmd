@@ -1,0 +1,31 @@
+---
+title: "Use of External Data and Domain Knowledge"
+output: html_document
+date: "2023-10-20"
+---
+
+# External Data
+
+-   Regarding the states
+
+    -   Population
+
+    -   Gdp per capita
+
+-   Weather
+
+-   Holiday season / Weekends
+
+-   Economic indicators
+
+    -   <https://www.census.gov/economic-indicators/>
+
+# Domain Related Information
+
+### UPC
+
+The Universal Product Code (UPC) is a 12-digit code used to identify a specific product. The first six digits of the code are the manufacturer's identification number, while the next five digits represent the product's number. The last digit is a check digit used to verify the accuracy of the code. The bars of the UPC code are used to represent the numbers. Each bar is a certain width and corresponds to a specific number. The longer bars represent the numbers 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9, while the shorter bars represent the numbers 0 and 1.
+
+### ZIP Code
+
+ZIP Codes are numbered with the first digit representing a certain group of U.S. states, the second and third digits together representing a region in that group (or perhaps a large city) and the fourth and fifth digits representing a group of delivery addresses within that region.
