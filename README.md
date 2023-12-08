@@ -117,3 +117,12 @@ If AMT < ORGPRICE, the product is on sale (discount).
 - Start putting everything together and writing report
 - Gathered information regarding salary costs and cloud computing costs. Prepared an excel sheet with formulas to calculate and analyze return on investment (ROI).
 - Started on experiments with clustering the transactions and the refunds to find patterns that would give insights for decision-making, in addition to our classification model.
+
+### Github repository summary
+- Folder "EDA" contains code of EDA
+- Folder "Final Report and Presentation" contains our final report and presentation slides
+- Folder "Initial Files" contains instructions for this project
+- Folder "data ingestion" contains the way we import the data
+- Folder "old_scripts" contains our old scripts, please ignore it
+- Folder "return_forecasting" contains all codes related to modeling. There are two folders inside it, "data_engineering" and "modeling". We firstly used code in "data_engineering" to do featur engineering, then we built our model by codes in "modeling" folder.
+
