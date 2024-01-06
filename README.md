@@ -1,6 +1,7 @@
 # Return Forecasting  
 
-## Description in one paragraph.
+## Description in one paragraph:
+We all live in a yellow submarine, yellow submarine, yellow submarine~~~
 
 ## Key information:
 **Topic ---** Analyzing and Classifying Customer Returns with Machine Learning Models.  
@@ -10,7 +11,7 @@
 **Objective ---** Optimize inventory management strategies maximize return on investment.
 
 ## Technical Details:
-A
+ABCDEFG
 
 ## Team members:
 * Muhammet Ali Büyüknacar
