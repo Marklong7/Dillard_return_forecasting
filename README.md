@@ -1,6 +1,6 @@
 # Return Forecasting
 
-## Desciption:
+## Description:
 
 
 ## Team members:
