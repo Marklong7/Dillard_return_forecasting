@@ -1,9 +1,9 @@
 # Return Forecasting  
 
 ## Description:
-Leverage data science methodologies employing SQL and Python to analyze Dillard's dataset, uncovering the key drivers behind customer product returns. Employing logistic regression, tree-models, and Support Vector Machines (SVM) algorithms, we'll develop precise models to identify and address the root causes of returns.
+Utilize data science techniques with a PostgreSQL database and Python to analyze Dillard's dataset, pinpointing the factors influencing customer returns. Employing algorithms like logistic regression, tree-models, and Support Vector Machines (SVM), we'll craft models tailored to the PostgreSQL environment, enabling precise identification and mitigation of return drivers.
 
-The application of these data science techniques is geared towards significantly reducing the return rate, thereby enhancing customer satisfaction. Following a meticulous Return on Investment (ROI) analysis, our approach demonstrates a robust ROI of 11.8%. This signifies the cost-effectiveness and efficiency of implementing our SQL and Python-based solutions, fortified by advanced algorithms, to optimize Dillard's operations and minimize return rates.
+Our approach, centered on PostgreSQL and Python, is designed to streamline the reduction of return rates, ultimately enhancing customer satisfaction. A meticulous Return on Investment (ROI) analysis showcases a robust ROI of 11.8%, emphasizing the cost-effectiveness and efficiency of implementing our PostgreSQL-based data science solutions. This strategic combination of tools and techniques promises to optimize Dillard's operations, curbing return rates and elevating overall customer experience.
 
 ## Key information:
 **Topic ---** Analyzing and Classifying Customer Returns with Machine Learning Models.  
