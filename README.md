@@ -12,9 +12,6 @@ A meticulous Return on Investment (ROI) analysis showcases a robust ROI of 11.8%
 **Business Question ---** Predict product returns based on product information and transaction record.  
 **Objective ---** Optimize inventory management strategies maximize return on investment.
 
-## Machine Learning Models
-
-
 ## Team members:
 * Muhammet Ali Büyüknacar
 * Zhiwei Gu
